@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import DonationBox from './components/DonationBox';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state={
+      min:0,
+      max:100,
+      currentValue:10,
+      count:42
+    }
+  }
+  render(){
+    return (
+      <div className="container">
+        <DonationBox count={this.state.count} currentValue={this.state.currentValue} min={this.state.min} max={this.state.max} />
+      </div>
+    );
+}
 }
 
 export default App;

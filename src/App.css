@@ -1,22 +1,67 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.tracker {
+    width: 50%;
+    height: 20px;
+    margin: 15px auto;
+    background: yellow;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container {
+    width: 50%;
+    text-align: center;
+    height: 100vh;
 }
 
-.App-link {
-  color: #09d3ac;
+.show-error {
+    color: red;
+    position: absolute;
+    font-size: 10px;
+    /* left: 12px; */
+    top: 51px;
+}
+
+.hide-error {
+    display: none;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    margin-left: 28px;
+}
+
+.progress-tracker {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.donation-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dcddde;
+    padding: 18px;
+    margin: 9px 0;
+}
+
+.db-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+}
+
+.db-form input {
+    /* width:31%; */
+    margin-right: 55px;
+}
+
+p {
+    font-size: 13px;
 }
